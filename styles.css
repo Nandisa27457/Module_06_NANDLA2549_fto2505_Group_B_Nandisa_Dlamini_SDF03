@@ -26,16 +26,16 @@ body {
 .container{
     display:grid;
     justify-content: center;
-    border: solid black;
     max-width: 100%;
-
+    align-content: center;
 
 }
 .profile{
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(2,1fr) ;
+    grid-template-columns: 400px 200px 200px ;
     grid-template-rows:400px 200px 80px;
+    
     
 }
 
@@ -46,14 +46,15 @@ body {
     border-radius:50%;
      overflow:hidden;
      margin-left: 0%;
-     grid-column:1/1 ;
-    grid-row:1/1;
+     grid-column:1/2;
+    grid:3;
     
 
 }
 .profile-image img{
     height: 100%;
     width: 100%;
+    
 }
 
 .profile-user-settings{
@@ -65,8 +66,22 @@ body {
 
 }
 
+.profile-bio{
+    grid-column: 1/-1;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+}
 
-.profile-stats ul{
+
+.btn{
+    height: 20px;
+    margin-top: 33px;
+    
+}
+
+   
+.column-profile-stats ul{
     grid-column:2;
     grid-row:2;
     display: flex;
