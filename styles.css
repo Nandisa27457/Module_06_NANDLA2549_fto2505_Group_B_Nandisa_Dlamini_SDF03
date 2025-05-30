@@ -25,7 +25,7 @@ body {
 /*Profile Layout*/
 .container{
     display:grid;
-    justify-content: center;
+    justify-content:start;
     max-width: 100%;
     align-content: center;
 
@@ -33,7 +33,7 @@ body {
 .profile{
     display: grid;
     place-content: center;
-    grid-template-columns: 400px 200px 200px ;
+    grid-template-columns: 400px 200px 200px 200px ;
     grid-template-rows:400px 200px 80px;
     
     
@@ -47,7 +47,9 @@ body {
      overflow:hidden;
      margin-left: 0%;
      grid-column:1/2;
-    grid:3;
+    grid:1;
+    margin-right: auto;
+    align-items:start;
     
 
 }
@@ -59,18 +61,24 @@ body {
 
 .profile-user-settings{
    grid-column:2/-1;
-   justify-content: space-between;
     grid-row:1;
     display: flex;
+    gap:10px;
     
 
 }
 
 .profile-bio{
-    grid-column: 1/-1;
+    grid-column: 2/-1;
     grid-row: 3;
     display: flex;
     flex-direction: row;
+}
+
+.profile-stats{
+    grid-column:2/-1 ;
+    grid-row:2
+
 }
 
 
@@ -81,8 +89,8 @@ body {
 }
 
    
-.column-profile-stats ul{
-    grid-column:2;
+.profile-stats ul{
+    grid-column:2/-1;
     grid-row:2;
     display: flex;
     flex-direction:row;
@@ -166,42 +174,14 @@ img{
     background-color: rgba(0, 0, 0, 0.34);
 }
 
+/*Image Styling*/
 
-
-
-
-
-
-/*.gallery-item-info{
-    position:relative;
-    top:0;
-    left:0;
-   /* opacity: 0;
-    object-fit: cover;
-    background-color:fill;
-     color:black;
-     display:flex;
-     align-items: center;
-     justify-content: center;
-     }
-
-.gallery-item-info ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-
-}
-img{
-   /* position: relative;
-    
-}
-.gallery-item-likes{
-    font-size: 2em;
-    font-weight: bold;
-
+.gallery-item-type{
+  display: none;
 }
 
-.gallery-item-comments{
-    font-size:2em;
-    font-weight:bold;
-}
+
+
+
+
+
