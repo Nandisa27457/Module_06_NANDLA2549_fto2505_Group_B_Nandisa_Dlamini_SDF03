@@ -42,7 +42,7 @@ body {
 
 .profile-image{
     border:rgba(0, 128, 117, 0.856) solid ;
-    border-width: 10px;
+    border-width: 20px;
     border-radius:50%;
      overflow:hidden;
      margin-left: 0%;
@@ -95,6 +95,7 @@ body {
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
+    
 }
 
 
@@ -172,6 +173,7 @@ img{
     justify-content:center;
     align-items:center;
     background-color: rgba(0, 0, 0, 0.34);
+    
 }
 
 /*Image Styling*/
@@ -180,6 +182,11 @@ img{
   display: none;
 }
 
+.gallery-item-info ul{
+    list-style-type: none;
+    display: flex;
+    gap:calc(10px);
+}
 
 
 
