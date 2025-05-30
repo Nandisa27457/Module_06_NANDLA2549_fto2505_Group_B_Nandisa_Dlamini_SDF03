@@ -18,6 +18,85 @@ body {
     padding-bottom: 3rem;
 }
 
-img {
-    display: block;
+
+/*Profile Layout*/
+.profile{
+    display: inline-flex;
+    width:100%;
 }
+
+.profile-image{
+    display: flex;
+    border:rgba(0, 128, 70, 0.285) solid ;
+    border-radius:50%;
+    display: flex;
+    overflow:hidden;
+}
+
+
+
+
+/*Image Layout*/
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+     gap:2px;
+     width :1200px;
+    border-radius: 16px;
+    position: relative;/*Fit the overlay on full width and height of image*/
+
+}
+
+img{
+    display: grid;
+    object-fit: cover;
+    width:100%;
+    height:500px;
+    padding:5px;
+    justify-content: center;
+    align-content: center;
+    display: block; /*Eliminates space at the bottom of the image*/
+    position:relative;
+}
+
+
+img:hover{
+    background-color: rgba(0, 0, 0, 0.185);
+    position:relative;
+
+}
+
+
+/*Hover Effect*/
+
+.gallery-item-info:hover-text{
+    display:block;
+    top:0;
+    left:0;
+    right:0;
+   /* opacity: 0;*/
+    object-fit: cover;
+    background-color:fill;
+     color:white;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     }
+
+     
+img{
+    position: relative;
+    
+}
+.gallery-item-likes{
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.gallery-item-comments{
+    font-size:2em;
+    font-weight:bold;
+}
+
